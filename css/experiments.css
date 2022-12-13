@@ -1,0 +1,195 @@
+/*Пример медиа-запроса.
+Этот код означает следующее: на экранах, ширина которых меньше или равна 320px, картинки будут иметь ширину 100%.*/
+@media screen and (max-width: 320px) {
+    img {
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px) {
+    .row {
+        margin-left:50px;
+        margin-right: 50px
+    }
+
+    .row--full {
+        margin: 0
+    }
+}
+
+
+p {
+    color: red;
+    text-decoration: underline;
+}
+
+/*Можно стилизовать конкретный элемент, если у него есть определённый класс.*/
+p.example {
+
+}
+
+/*Селектор выберет все элементы с классом main, у которых также есть и класс active.*/
+.main.active {
+    background: blue;
+
+}
+
+/*Если между двумя простыми селекторами стоит пробел и ничего больше, это означает вложенность на любом уровне.*/
+.page p {
+    text-decoration: underline;
+}
+
+/*Правая угловая скобка > обозначает вложенность на первом уровне.*/
+.page > p {
+    text-decoration: underline;
+}
+
+.promo-bar > .promo-item > .promo-cta-button {
+
+}
+
+/*Можно задавать стили в зависимости от конкретного значения конкретного атрибута.
+Этот селектор выберет все элементы <input type="password">.*/
+input[type="password"] {
+
+}
+
+/*Для того, чтобы выбрать элемент, который находится сразу после другого элемента, используется знак +.
+Этот код применит стили во всех <p>, идущих сразу после <img>.*/
+img + p {
+    margin-top: 0;
+    font-style: italic;
+}
+
+/*Для того, чтобы выбрать элемент, который находится после другого элемента, используется знак ~.
+Этот код применит стили во всех <p>, идущих после <img>, даже если между img и p есть другие элементы.*/
+img ~ p {
+    margin-top: 0;
+    font-style: italic;
+}
+
+.example {
+    /* цвет фона «продающий красный», задан в HEX-формате */
+    background: #e64c0c;
+}
+
+.example {
+    /* картинка на фоне.*/
+    background: url('img/bg.svg');
+
+    /* background-size отвечает за размер картинки, cover - картинка растягивается на весь блок, сохраняя пропорции.*/
+    background-size: cover;
+}
+
+/*Один и тот же набор свойств можно применить к разным селекторам.*/
+button,
+.button,
+.cta-button {
+}
+
+/*Псевдоклассы - это ключевые слова, которые добавляются к селектору. Стили, заданные таким образом, применяются только для определённых состояний.
+Например, :hover может быть использован для изменения цвета кнопки при наведении курсора.
+Стили псевдокласса переопределяют заданные ранее стили, если они есть.
+Самые часто используемые псевдоклассы:
+:hover - появляется при наведении мышки
+:active - появляется при нажатии на элемент
+:focus - появляется при фокусировке на элементе (например, когда выбрано поле ввода текста)*/
+button:hover {
+    background: red;
+}
+
+.button2 {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #fff;
+    background: #2799d6;
+    box-shadow: 0 4px 8px 0 rgba(39, 153, 214, 0.35);
+    cursor: pointer;
+}
+
+.button2:hover {
+    background: #7cc1e6;
+    box-shadow: 0 4px 16px 0 rgba(39, 153, 214, 0.25);
+}
+
+.button3 {
+    background: #2799d6;
+    border-radius: 4px;
+    transition: border-radius 0.5s ease-in;
+}
+
+.button3:hover {
+    background: greenyellow;
+    border-radius: 16px;
+}
+
+.button4 {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #fff;
+    background: #2799d6;
+    box-shadow: 0 4px 8px 0 rgba(39, 153, 214, 0.35);
+    cursor: pointer;
+    transition: border-radius 0.2s ease-in;
+}
+
+.button4:hover {
+    background: #7cc1e6;
+    box-shadow: 0 4px 16px 0 rgba(39, 153, 214, 0.25);
+    border-radius: 16px;
+}
+
+.text {
+    float: right;
+    overflow: auto; /*Свойство overflow управляет отображением содержания блочного элемента при переполнении.*/
+}
+
+.пример {
+    padding: 10px;
+    /*  внешний отступ для всех сторон размером 10px;
+      padding: 5px 10px;    /*  внешний отступ сверху и снизу размером 5px, слева-справа 10px;
+      padding: 5px 20px 0;   /*  внешний отступ сверху размером 5px, слева-справа 20px и снизу 0;
+      padding: 5px 10px 15px 20px;   /*  внешний отступ сверху размером 5px, справа 10px, снизу 15px и слева 20px;*/
+}
+
+.container {
+    padding: 8px;
+    border: 2px solid green;
+    width: 600px;
+}
+
+.left {
+    padding: 16px;
+    float: left;
+    width: 100px;
+    background: violet;
+}
+
+.static {
+    padding: 16px;
+    background: pink;
+}
+
+.clear {
+    clear: both;
+}
+
+.bottom {
+    background: cyan;
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    border: 1px solid white;
+}

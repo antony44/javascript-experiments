@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Experimental HTML page</title>
+    <style>
+        .teg-style {
+            background: #ebac0c;
+        }
+    </style>
+    <link rel="stylesheet" href="css/experiments.css">
+</head>
+
+<body>
+
+<h1 class="main active">Header H1</h1>
+<h3 class="teg-style">Header H3</h3>
+<h6 style="border: 3px solid #000; margin-top: 16px;">Header H6</h6>
+<br>
+
+<p>Paragraph</p>
+<p>Paragraph with <strong>strong</strong> word</p>
+<p>Paragraph with <q>quoted</q> word</p>
+<p>Paragraph with <abbr>abbreviation</abbr> word</p>
+<br><br>
+
+<button>Button</button>
+<button disabled>Button</button>
+<div style="padding: 30px;">
+    <button class="button2">Красивая кнопка с тенью</button>
+    <button class="button3">Animated button</button>
+    <button class="button4">Красивая анимированная кнопка с тенью</button>
+</div>
+<br><br>
+
+<i>This is an "i" tag</i><br><br>
+
+<h4>Bullet list</h4>
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+<br><br>
+
+<h4>Ordered list</h4>
+<ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+<br><br>
+
+<h4>Terms list</h4>
+<dl>
+    <dt>Гаспачо</dt>
+    <dd>лёгкий холодный суп из перетёртых в пюре свежих овощей</dd>
+    <dt>Том-ям</dt>
+    <dd>кисло-острый суп на основе куриного бульона с креветками, курицей, рыбой или другими морепродуктами</dd>
+    <dt>Борщ</dt>
+    <dd>разновидность супа на основе свёклы, которая придаёт борщу характерный красный цвет</dd>
+</dl>
+<br><br>
+
+<h4>Вложенный список</h4>
+<ul>
+    <li>Омлет
+        <ul>
+            <li>Молоко</li>
+            <li>Яйца</li>
+        </ul>
+    </li>
+    <li>Блинчики
+        <ul>
+            <li>Молоко</li>
+            <li>Яйца</li>
+            <li>Мука</li>
+            <li>Сахар</li>
+            <li>Соль</li>
+            <li>Разрыхлитель</li>
+        </ul>
+    </li>
+    <li>Торт</li>
+    <li>Пирог</li>
+</ul>
+<br><br>
+
+
+<a href="https://stepik.org/catalog" target="_blank">Link on Stepik</a><br><br>
+<a href="#anchor_id_1">Перейти к якорю 1</a><br><br>
+<a href="#anchor_id_2">Перейти к яобщекорю 2</a><br><br>
+
+<table border="5px">
+    <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>Honda</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td>Suzuki</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+    </tr>
+</table>
+<br><br>
+
+<table border="1">
+    <caption>Сотрудники отдела поддержки</caption>
+    <thead>
+    <tr>
+        <th>Имя</th>
+        <th>Должность</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Петя</td>
+        <td>Менеджер</td>
+    </tr>
+    <tr>
+        <td>Маша</td>
+        <td>Разработчик</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td>Вася</td>
+        <td>Девопс</td>
+    </tr>
+    </tfoot>
+</table>
+<br><br>
+
+<table border="1">
+    <tr>
+        <td>Первая ячейка</td>
+        <td>Вторая ячейка</td>
+        <td>Третья ячейка</td>
+    </tr>
+    <tr>
+        <td>Единственная ячейка</td>
+    </tr>
+</table>
+<br><br>
+
+<table border="1">
+    <tr>
+        <td>Первая ячейка</td>
+        <td>Вторая ячейка</td>
+        <td>Третья ячейка</td>
+    </tr>
+    <tr>
+        <td colspan="3">Единственная ячейка</td>
+    </tr>
+</table>
+<br><br>
+
+<table border="1">
+    <tr>
+        <td rowspan="2">Левая ячейка</td>
+        <td>Верхняя ячейка</td>
+    </tr>
+    <tr>
+        <td>Нижняя ячейка</td>
+    </tr>
+</table>
+<br><br>
+
+<table border="1">
+    <tr>
+        <td rowspan="2">Левая ячейка</td>
+        <td>Средняя ячейка</td>
+        <td>Правая ячейка</td>
+    </tr>
+    <tr>
+        <td colspan="2">Нижняя ячейка</td>
+    </tr>
+</table>
+<br><br>
+
+
+<img
+        src="img/cat.jpeg"
+        title="Барсик"
+        alt="Рябой кот сидит себе такой"
+        width="600"
+        height="801"
+>
+
+<figure>
+    <img src="img/cat.jpeg" width="600" height="801" alt="A cat">
+    <figcaption>
+        Кот Барсик сидит себе такой
+    </figcaption>
+</figure>
+<br><br>
+
+<h1 id="anchor_id_1">Якорь</h1><br>
+<h1 id="anchor_id_2">Якорь 2</h1><br>
+
+<form method="get">
+    <input type="text">text<br><br>
+    <input type="password">password<br><br>
+    <input type="email">email<br><br>
+    <input type="tel">tel<br><br>
+    <input type="url">url<br><br>
+    <input type="number" min="2" max="10" value="6" step="2">number<br><br>
+    <input type="range" min="2" max="10" value="6" step="2">range<br><br>
+    <input type="search">search<br><br>
+    <input type="checkbox">checkbox<br><br>
+    <!--Ввод E-Mail, type="email". Текстовое поле, у которого на клавиатуре мобильных устройств появляется символ @.-->
+    <!--Номер телефона, type="tel". На мобильных устройствах открывается клавиатура с числами.-->
+    <!--Ввод ссылки, type="url".-->
+    <!--Числовое поле, type="number". Помимо клавиатуры с цифрами появляется возможность переключать значения поля. Атрибуты min и max определяют нижнее и верхнее возможное значение, step - шаг изменения, a value - начальное значение.-->
+    <!--Числовой ползунок, type="range". Появляются уже указанные атрибуты min, max, step и value.-->
+    <!--Поиск, type="search". Google Chrome добавляет крестик для очистки введенной строки. На мобильных устройствах появляется кнопка поиска.-->
+
+    <input type="radio" name="gender" value="male" checked> Мужской<br>
+    <input type="radio" name="gender" value="female"> Женский<br>
+    <input type="radio" name="gender" value="other"> Другой<br><br>
+
+    <select>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+    </select><br><br>
+
+    <input type="file"><br>
+    <input type="reset">
+    <input type="submit">
+    <button>Нажми на меня</button>
+    <br><br>
+
+</form>
+<br><br>
+
+<div class="container">
+    <div class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in vulputate dolor. Aliquam erat
+        volutpat. Sed eu risus id augue venenatis varius. Integer eu ex nec odio eleifend rhoncus.
+    </div>
+    <div class="static">Съешь ещё этих мягких французских булочек</div>
+    <div class="clear"></div>
+</div>
+
+<div class="bottom">Блок, который идёт после родительского</div>
+<br><br>
+
+<div class="blocks">
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+</div>
+<br><br>
+
+
+</body>
+
+</html>
